@@ -1,0 +1,468 @@
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.tittle {
+  height: 25%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.city-image {
+  width: 7.5%;
+  position: absolute;
+  bottom: 0;
+}
+
+.brighton-times {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 10%;
+  top: 5%;
+}
+
+.menu-image {
+  position: absolute;
+  right: 1%;
+  padding: 2%;
+}
+
+.status-bar {
+  width: 100%;
+  height: wrap;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 4%;
+}
+
+.the-page {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cover-story {
+  height: 30vw;
+  width: 100%;
+  position: relative;
+  border: grey solid 1px;
+}
+
+.cover-story-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.cover-story-bar {
+  height: 30%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+}
+
+.cover-story-title {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 90%;
+}
+
+.the-actual-cover-story {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 80%;
+}
+
+.top-newsblock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-news-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0 0 0;
+}
+
+.table-box {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  margin: 3% 0;
+}
+
+th {
+  background-color: teal;
+  color: white;
+  padding: 1vw;
+}
+
+td {
+  padding: 1%;
+  text-align: center;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.temperature-news {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.today-forecast-big {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.temp-indicator {
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+
+.today-weather-image {
+  height: 100%;
+  width: 100%;
+}
+
+.todays-temp {
+  align-self: center;
+}
+
+.forecasts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.individual-forecast {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.day {
+  align-self: center;
+}
+
+.img-holder {
+  display: flex;
+  height: 15vw;
+  width: 15vw;
+}
+
+.temp {
+  align-self: center;
+}
+
+.forecastimage {
+  height: 100%;
+  width: 100%;
+}
+
+.latest-news-tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-items {
+  padding: 1vw;
+}
+
+.latest-news-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0 0 1vw;
+}
+
+.latest-news-headers {
+  font-weight: bold;
+  padding: 0.5vw;
+}
+
+.latestnewsimage {
+  width: 20%;
+  height: 7vw;
+  object-fit: cover;
+  float: left;
+  margin-right: 1vw;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-element {
+  padding: 0 1.5vw;
+}
+
+.hbar {
+  fill: black;
+  width: 100%;
+}
+
+/************************************** The mobile view***************************************** */
+
+@media (max-width: 480px) {
+  .brighton-times {
+    font-size: 1.3em;
+  }
+
+  .cover-story-title {
+    font-size: 0.8em;
+  }
+
+  .the-actual-cover-story {
+    font-size: 0.4em;
+  }
+
+  .top-news {
+    font-size: 1em;
+  }
+
+  .more {
+    font-size: 1em;
+  }
+
+  .top-news-headers {
+    font-size: 0.9em;
+  }
+
+  /*  */
+
+  table {
+    font-size: 0.6em;
+  }
+
+  .present-location {
+    font-size: 1em;
+  }
+
+  .todays-temp {
+    font-size: 1.8em;
+  }
+
+  .temp {
+    align-self: center;
+  }
+
+  .day {
+    font-size: 1em;
+  }
+
+  .temp {
+    font-size: 1em;
+  }
+
+  .latest-news-headers {
+    font-size: 0.5em;
+  }
+
+  .latest-news-content {
+    font-size: 0.5em;
+  }
+
+  .footer-element {
+    font-size: 0.5em;
+  }
+
+  .status-bar {
+    display: none;
+  }
+}
+
+/* ************************************************************************************ */
+
+/************************************** The tablet view********************************** */
+@media (max-width: 720px) and (min-width: 480px) {
+  .header {
+    order: -1;
+  }
+
+  .temperature-news {
+    order: -1;
+    width: 35%;
+  }
+
+  .cover-story {
+    order: -1;
+    width: 60%;
+
+    border: grey solid 1px;
+  }
+
+  .cover-story-title {
+    font-size: 0.8em;
+  }
+
+  .brighton-times {
+    font-size: 2em;
+  }
+
+  .the-actual-cover-story {
+    font-size: 0.5em;
+  }
+
+  .top-news {
+    font-size: 1em;
+  }
+
+  .more {
+    font-size: 1em;
+  }
+
+  .top-news-headers {
+    font-size: 0.9em;
+  }
+
+  /*  */
+
+  table {
+    font-size: 0.8em;
+    padding: 2%;
+  }
+
+  .present-location {
+    padding: 0%;
+    font-size: 1em;
+  }
+
+  .todays-temp {
+    font-size: 1.5em;
+  }
+
+  .img-holder {
+    height: 7vw;
+    width: 7vw;
+  }
+
+  .day {
+    font-size: 1em;
+  }
+
+  .temp {
+    font-size: 1em;
+  }
+
+  .latest-news-headers {
+    font-size: 1em;
+  }
+
+  .latest-news-content {
+    font-size: 0.8em;
+  }
+
+  .footer-element {
+    font-size: 0.8em;
+  }
+
+  .menu-image {
+    display: none;
+  }
+}
+
+/* -****************************************************************---------------- */
+
+/************************************** The Desktop view************************** */
+@media (min-width: 720px) {
+  .brighton-times {
+    font-size: 3em;
+  }
+
+  .status-topic {
+    font-size: 1em;
+  }
+
+  .cover-story-title {
+    font-size: 1.8em;
+  }
+
+  .the-actual-cover-story {
+    font-size: 0.8em;
+  }
+
+  .cover-story-bar {
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    color: grey;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .top-news {
+   
+    font-size: 2em;
+  }
+
+  .more {
+  
+    font-size: 2em;
+  }
+
+  .top-news-headers {
+    font-size: 1.5em;
+  }
+
+  /*  */
+
+  table {
+    font-size: 1.5em;
+  }
+
+  .present-location {
+    font-size: 2em;
+  }
+
+  .todays-temp {
+    font-size: 2em;
+  }
+
+  .menu-image {
+    display: none;
+  }
+
+  .temp {
+    align-self: center;
+  }
+
+  .day {
+    font-size: 1.3em;
+  }
+
+  .latest-news-headers {
+    font-size: 1em;
+  }
+
+  .latest-news-content {
+    font-size: 1em;
+  }
+
+  .footer-element {
+    font-size: 1em;
+  }
+}
